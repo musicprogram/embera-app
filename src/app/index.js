@@ -1,9 +1,13 @@
-const contenido = document.querySelector("#contenido");
+const maniqui = document.querySelector("#maniqui");
+
+const estanteriaSuperior = document.querySelector("#estanteriaSuperior");
+
 
 const Dress = require('./Dress.js');
 
 const dress = new Dress();
 
 (()=>{
-	contenido.innerHTML = dress.figurin()	
+	maniqui.innerHTML = dress.figurin();
+	estanteriaSuperior.innerHTML = dress.estanteriaSuperior()
 })()
